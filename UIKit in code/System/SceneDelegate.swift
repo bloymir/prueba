@@ -15,10 +15,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
         guard let scene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: scene)
-        let controller = UIView_Controller()
         
+        /*  Sin Navigation Controller
+        window = UIWindow(windowScene: scene)
+        let controller = UITextField_Controller()
         window?.rootViewController = controller
+        window?.makeKeyAndVisible() */
+        
+        window = UIWindow(windowScene: scene)
+        let controller = ScrollViewController()
+        let navigation = UINavigationController(rootViewController: controller)
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }
 

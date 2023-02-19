@@ -13,6 +13,14 @@
 		68492B5629A0906900651100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68492B5529A0906900651100 /* Assets.xcassets */; };
 		68492B5929A0906900651100 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68492B5729A0906900651100 /* LaunchScreen.storyboard */; };
 		68492B6829A0929D00651100 /* UIView_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B6729A0929D00651100 /* UIView_Controller.swift */; };
+		68492B8D29A0989400651100 /* UIButton_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B8C29A0989400651100 /* UIButton_Controller.swift */; };
+		68492B8F29A186FD00651100 /* UILabel_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B8E29A186FD00651100 /* UILabel_Controller.swift */; };
+		68492B9129A18F8400651100 /* UITextField_Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B9029A18F8400651100 /* UITextField_Controller.swift */; };
+		68492B9329A1B69A00651100 /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B9229A1B69A00651100 /* PaddingTextField.swift */; };
+		68492B9729A1B95600651100 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B9629A1B95600651100 /* UITextField+Padding.swift */; };
+		68492B9929A1C0B000651100 /* UITextField+CloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B9829A1C0B000651100 /* UITextField+CloseButton.swift */; };
+		68492B9B29A1C4FA00651100 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B9A29A1C4FA00651100 /* ScrollViewController.swift */; };
+		68492B9D29A1CC6600651100 /* ViewScrolllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68492B9C29A1CC6600651100 /* ViewScrolllable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		68492B5829A0906900651100 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68492B5A29A0906900651100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68492B6729A0929D00651100 /* UIView_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Controller.swift; sourceTree = "<group>"; };
+		68492B8C29A0989400651100 /* UIButton_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton_Controller.swift; sourceTree = "<group>"; };
+		68492B8E29A186FD00651100 /* UILabel_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel_Controller.swift; sourceTree = "<group>"; };
+		68492B9029A18F8400651100 /* UITextField_Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField_Controller.swift; sourceTree = "<group>"; };
+		68492B9229A1B69A00651100 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		68492B9629A1B95600651100 /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		68492B9829A1C0B000651100 /* UITextField+CloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+CloseButton.swift"; sourceTree = "<group>"; };
+		68492B9A29A1C4FA00651100 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		68492B9C29A1CC6600651100 /* ViewScrolllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewScrolllable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,10 @@
 			children = (
 				68492B5029A0906800651100 /* ViewController.swift */,
 				68492B6729A0929D00651100 /* UIView_Controller.swift */,
+				68492B8C29A0989400651100 /* UIButton_Controller.swift */,
+				68492B8E29A186FD00651100 /* UILabel_Controller.swift */,
+				68492B9029A18F8400651100 /* UITextField_Controller.swift */,
+				68492B9A29A1C4FA00651100 /* ScrollViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,8 +131,28 @@
 		68492B6629A091DD00651100 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				68492B9529A1B93100651100 /* Components */,
+				68492B9429A1B92000651100 /* Extension */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		68492B9429A1B92000651100 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				68492B9629A1B95600651100 /* UITextField+Padding.swift */,
+				68492B9829A1C0B000651100 /* UITextField+CloseButton.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		68492B9529A1B93100651100 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				68492B9229A1B69A00651100 /* PaddingTextField.swift */,
+				68492B9C29A1CC6600651100 /* ViewScrolllable.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,8 +226,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				68492B5129A0906800651100 /* ViewController.swift in Sources */,
+				68492B9329A1B69A00651100 /* PaddingTextField.swift in Sources */,
+				68492B9129A18F8400651100 /* UITextField_Controller.swift in Sources */,
 				68492B4D29A0906800651100 /* AppDelegate.swift in Sources */,
+				68492B9729A1B95600651100 /* UITextField+Padding.swift in Sources */,
 				68492B6829A0929D00651100 /* UIView_Controller.swift in Sources */,
+				68492B8D29A0989400651100 /* UIButton_Controller.swift in Sources */,
+				68492B9B29A1C4FA00651100 /* ScrollViewController.swift in Sources */,
+				68492B8F29A186FD00651100 /* UILabel_Controller.swift in Sources */,
+				68492B9929A1C0B000651100 /* UITextField+CloseButton.swift in Sources */,
+				68492B9D29A1CC6600651100 /* ViewScrolllable.swift in Sources */,
 				68492B4F29A0906800651100 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
